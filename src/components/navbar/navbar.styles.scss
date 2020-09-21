@@ -1,0 +1,39 @@
+.scb-navbar {
+  height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $basered;
+  .scb-nav-list {
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+  }
+  .scb-list {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+  .nav-active {
+    filter: invert(85%) sepia(44%) saturate(2347%) hue-rotate(358deg)
+      brightness(104%) contrast(106%);
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .scb-navbar {
+    max-width: 270px;
+    right: 10px;
+  }
+}

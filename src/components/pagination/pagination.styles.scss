@@ -1,0 +1,13 @@
+.pagination {
+  margin: 20px 0;
+  button {
+    background: inherit;
+    color: white;
+    border: 1px solid $red;
+    margin: 5px;
+    width: 50px;
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}

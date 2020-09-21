@@ -1,0 +1,19 @@
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  padding: 0 15px;
+  img {
+    margin-right: 10px;
+  }
+  button {
+    &:hover {
+      background-color: #000917;
+      color: #fff;
+      border: 1px solid  #fff;
+    }
+    
+  }
+}

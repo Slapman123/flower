@@ -1,0 +1,15 @@
+.confirmation-dialog {
+  .span {
+    color: #000 !important;
+  }
+}
+.buttons-wrap {
+  padding: 35px;
+  button {
+    background-color: $red;
+    color: #fff;
+    width: 140px;
+    padding: 10px;
+    border: none;
+  }
+}
