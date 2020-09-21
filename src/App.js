@@ -8,15 +8,17 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
+import Header from "./components/header/Header";
 
 
 const App = ({ helpers }) => {
   return (
     <div
-      className={helpers.app.isAjaxInProgress ? "loading" : ""}
+      className="flex-column-center"
       // style={{ marginTop: "50px" }}
     >
-      <h1 style={{color: "white"}}>zzzzzzzzzzzzzz</h1>
+      <Header />
+      <h1>zzzzzzzzzzzzzz</h1>
       <Router>
         <Switch>
           {/* <Route exact path="/login" component={Login} />
