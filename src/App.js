@@ -3,29 +3,18 @@ import "./styles/styles.scss";
 import "./App.css";
 import PropTypes from "prop-types";
 import { setup } from "./utils/setup";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/header/Header";
-
+import Home from "./views/Home/Home";
 
 const App = ({ helpers }) => {
   return (
-    <div
-      className="flex-column-center"
-      // style={{ marginTop: "50px" }}
-    >
+    <div className="flex-column-center">
       <Header />
-      <h1>zzzzzzzzzzzzzz</h1>
       <Router>
         <Switch>
-          {/* <Route exact path="/login" component={Login} />
-          <Route exact path="/welcome" component={Welcome} /> */}
-      
+          <Route exact path="/" component={Home} />
         </Switch>
-      {/* {!helpers.auth.isLoggedIn ? <Redirect to="/login" /> : ""} */}
       </Router>
     </div>
   );
